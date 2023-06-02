@@ -1,7 +1,14 @@
+"use client";
 import React from "react";
 import { Dish } from "@/types/shops";
+import { useDispatch } from "react-redux";
+import { addItem } from "@/redux/slices/cartSlice";
 
 const Item = ({ title, img, description, price }: Dish) => {
+  const dispatch = useDispatch();
+  const handleClick = () => {
+    dispatch(addItem({ title, img, description, price }));
+  };
   return (
     <div className="flex p-2 flex-col basis-1/2 items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl">
       <img
@@ -14,11 +21,15 @@ const Item = ({ title, img, description, price }: Dish) => {
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
           {title}
         </h5>
-        <p className="mb-3 font-normal text-lg text-gray-700">
-          {description}
-        </p>
+        <p className="mb-3 font-normal text-lg text-gray-700">{description}</p>
         <p className="font-bold text-xl">{price}</p>
-        <button className="bg-slate-400 text-white font-bold text-xl h-8 self-end w-20 rounded-xl hover:bg-slate-500" type="button">Buy</button>
+        <button
+          onClick={handleClick}
+          className="bg-slate-400 text-white font-bold text-xl h-8 self-end w-20 rounded-xl hover:bg-slate-500"
+          type="button"
+        >
+          Buy
+        </button>
       </div>
     </div>
   );
