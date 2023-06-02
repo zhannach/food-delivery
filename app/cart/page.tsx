@@ -1,8 +1,15 @@
+import CartList from '@/components/CartList';
+import Form from '@/components/Form';
+import SubTotal from '@/components/SubTotal';
 import React from 'react'
 
 const Cart = () => {
   return (
-    <div>page</div>
+    <section className='flex p-20 justify-between bg-gray-100'>
+      <Form />
+      <CartList />
+      <SubTotal />
+    </section>
   )
 }
 
