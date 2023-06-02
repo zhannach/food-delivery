@@ -2,7 +2,7 @@ import React from "react";
 
 const SubTotal = () => {
   return (
-    <div className="self-start mt-22 w-52 h-full rounded-lg border bg-white p-6 shadow-md">
+    <div className="self-start mt-24 w-52 h-full rounded-lg border bg-white p-6 shadow-md">
       <div className="mb-2 flex justify-between">
         <p className="text-gray-700">Subtotal</p>
         <p className="text-gray-700">$129.99</p>

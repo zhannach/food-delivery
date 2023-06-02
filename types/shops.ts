@@ -15,4 +15,5 @@ export interface Dish {
   img: string;
   description: string;
   price: string;
+  count?: number;
 }

@@ -28,7 +28,7 @@ const Item = ({ title, img, description, price }: Dish) => {
           className="bg-slate-400 text-white font-bold text-xl h-8 self-end w-20 rounded-xl hover:bg-slate-500"
           type="button"
         >
-          Buy
+          Add
         </button>
       </div>
     </div>
