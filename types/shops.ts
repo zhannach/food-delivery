@@ -5,12 +5,12 @@ export interface ShopType {
 }
 
 export interface ShopInfo {
-  menu: Dishes[],
+  menu: Dish[],
   id: string,
   restaurantId: string
 }
 
-export interface Dishes {
+export interface Dish {
   title: string;
   img: string;
   description: string;
