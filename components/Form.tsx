@@ -1,5 +1,9 @@
 "use client";
-import { useForm } from "react-hook-form";
+import { setUser } from "@/redux/slices/userSlice";
+import { User } from "@/types/shops";
+import { useId } from "react";
+import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
+import { useDispatch } from "react-redux";
 
 const Form = () => {
   const {
@@ -8,7 +12,19 @@ const Form = () => {
     reset,
     formState: { errors },
   } = useForm({ mode: "onChange", reValidateMode: "onChange" });
-  const onSubmit = (data) => console.log(data);
+  const dispatch = useDispatch();
+  const id = useId();
+  const onSubmit: SubmitHandler<FieldValues> = (data) => {
+    dispatch(
+      setUser({
+        id,
+        name: data.name,
+        email: data.email,
+        address: data.address,
+        phone: data.phone,
+      })
+    );
+  };
   return (
     <>
       <form
@@ -87,15 +103,15 @@ const Form = () => {
         </div>
         <div className="mb-6">
           <label
-            htmlFor="adress"
+            htmlFor="address"
             className="block mb-2 text-xl font-medium text-gray-900"
           >
             Adress
           </label>
           <input
-            id="adress"
+            id="address"
             type="text"
-            {...register("adress", {
+            {...register("address", {
               pattern: {
                 value: /^[a-zA-Z0-9 ]{4,}$/,
                 message: "enter correct number",

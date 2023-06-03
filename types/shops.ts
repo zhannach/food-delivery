@@ -5,9 +5,9 @@ export interface ShopType {
 }
 
 export interface ShopInfo {
-  menu: Dish[],
-  id: string,
-  restaurantId: string
+  menu: Dish[];
+  id: string;
+  restaurantId: string;
 }
 
 export interface Dish {
@@ -16,4 +16,11 @@ export interface Dish {
   description: string;
   price: string;
   count?: number;
+}
+
+export interface User {
+  name: string;
+  email: string;
+  phone: number;
+  address: string;
 }
