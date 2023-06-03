@@ -9,13 +9,13 @@ const CartItem = ({ title, img, price, count }: Dish) => {
   const [localCount, setLocalCount] = useState(count);
   const dispatch = useDispatch();
   const handlePlusItem = () => {
-    dispatch(addItem);
+    dispatch(addItem({ title, img, price, count }));
     if (localCount)
       setLocalCount((prevState) => (prevState ? prevState + 1 : undefined));
   };
-  
+
   const handleMinusItem = () => {
-    dispatch(minusItem);
+    dispatch(minusItem({ title, img, price, count }));
     if (localCount && localCount >= 1)
       setLocalCount((prevState) =>
         prevState && prevState > 1 ? prevState - 1 : 1
@@ -58,7 +58,7 @@ const CartItem = ({ title, img, price, count }: Dish) => {
               </span>
             </div>
             <div className="flex items-center space-x-4">
-              <p className="text-sm">259</p>
+              <p className="text-sm">{parseInt(price) * localCount} UAH</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

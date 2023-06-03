@@ -5,7 +5,7 @@ import React from 'react'
 
 const Cart = () => {
   return (
-    <section className='flex p-20 justify-between bg-gray-100'>
+    <section className='flex p-20 h-full justify-between bg-gray-100'>
       <Form />
       <CartList />
       <SubTotal />

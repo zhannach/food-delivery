@@ -11,7 +11,7 @@ const CartList = () => {
   return (
     <div className="h-screen basis-2/4 h-auto bg-gray-100 pt-8">
     <h1 className="mb-10 text-center text-2xl font-bold">Cart Items</h1>
-    <section className="mx-auto w-full justify-center px-6">
+    <section className="mx-auto w-full pb-20 justify-center px-6">
     {cartItems.map((cartItem: Dish) => {
         return <CartItem key={cartItem.title} {...cartItem} />;
       })}
