@@ -9,7 +9,6 @@ const Form = () => {
   const {
     register,
     handleSubmit,
-    reset,
     formState: { errors },
   } = useForm({ mode: "onChange", reValidateMode: "onChange" });
   const dispatch = useDispatch();

@@ -1,10 +1,12 @@
 "use client";
 import React from "react";
 import { Dish } from "@/types/shops";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addItem } from "@/redux/slices/cartSlice";
+import { RootState } from "@/redux/store";
 
 const Item = ({ title, img, description, price }: Dish) => {
+const cartItems = useSelector((state: RootState) => state.cartItems.cartItems)
   const dispatch = useDispatch();
   const handleClick = () => {
     dispatch(addItem({ title, img, description, price }));
@@ -25,10 +27,10 @@ const Item = ({ title, img, description, price }: Dish) => {
         <p className="font-bold text-xl">{price}</p>
         <button
           onClick={handleClick}
-          className="bg-slate-400 text-white font-bold text-xl h-8 self-end w-20 rounded-xl hover:bg-slate-500"
+          className="bg-slate-400 text-white font-bold text-xl h-8 self-end w-24 rounded-xl hover:bg-slate-500"
           type="button"
         >
-          Add
+          {cartItems.find((item) => item.title === title) ? "In Cart" :  "Add"}
         </button>
       </div>
     </div>
