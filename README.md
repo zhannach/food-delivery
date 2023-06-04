@@ -39,10 +39,9 @@ Accomplished:
 
 Time limits: 3 days.
 
-[Screenshot from 2023-06-04 19-29-26.png](https://i.postimg.cc/dtbSM3R3/Screenshot-from-2023-06-04-19-29-26.png)
+![Screenshot from 2023-06-04 19-29-26](https://github.com/zhannach/food-delivery/assets/87633082/1243619c-ea9a-4e62-b25c-3e320d35df8a)
 
-https://i.postimg.cc/XqF1X044/screencapture-localhost-3000-cart-2023-06-04-19-30-25.png
-
+![screencapture-localhost-3000-cart-2023-06-04-19_30_25](https://github.com/zhannach/food-delivery/assets/87633082/76826a5a-7f5d-4121-ab13-a3dbe2f4e946)
 
 
 For run the development server:
