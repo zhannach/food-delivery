@@ -4,23 +4,27 @@ import { writeUserData } from "@/helpers/writeData";
 import { RootState } from "@/redux/store";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import Modal from "./Portal/Modal";
-import { useRouter } from 'next/navigation';
+import { useRouter } from "next/navigation";
+import { setUser } from "@/redux/slices/userSlice";
+import { clearCart } from "@/redux/slices/cartSlice";
 
 const SubTotal = () => {
   const [isOpen, setIsOpen] = useState(false);
-  let [message, setMessage] = useState('');
+  let [message, setMessage] = useState("");
   const router = useRouter();
-  const {  reset } = useForm();
+  const dispatch = useDispatch();
+  const { reset } = useForm();
   const { cartItems: products, totalPrice } = useSelector(
     (state: RootState) => state.cartItems
   );
   const { id, email, name, address, phone } = useSelector(
     (state: RootState) => state.user
   );
+  console.log(id, email, name, address, phone)
   const handleCreateOrder = () => {
-    if (!email || !address || !phone ) {
+    if (!email || !address || !phone) {
       setMessage("Please, fill the form.");
     } else {
       writeUserData({
@@ -34,17 +38,23 @@ const SubTotal = () => {
         items: products,
         totalPrice,
       });
-      setMessage("Thank you for your order. Your order is already being prepared.");
+      setMessage(
+        "Thank you for your order. Your order is already being prepared."
+      );
       setTimeout(() => {
         reset();
-        router.push('/');
-    }, 1000);
+        dispatch(
+          setUser({ id: 0, name: "", email: "", phone: 0, address: "" })
+        );
+        dispatch(clearCart());
+        router.push("/");
+      }, 1000);
     }
     setIsOpen(true);
     setTimeout(() => {
-      setIsOpen(false)
-      if (message.includes("Thank you")) router.push('/');
-    }, 1000)
+      setIsOpen(false);
+      if (message.includes("Thank you")) router.push("/");
+    }, 1000);
   };
 
   return (

@@ -16,7 +16,7 @@ import userReducer from "./slices/userSlice";
 const persistConfig = {
   key: "root",
   storage,
-  whitelist: ["cartItems", "user"],
+  whitelist: ["cartItems"],
 };
 
 export const appReducer = combineReducers({
