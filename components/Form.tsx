@@ -111,16 +111,12 @@ const Form = () => {
             id="address"
             type="text"
             {...register("address", {
-              pattern: {
-                value: /^[a-zA-Z0-9 ]{4,}$/,
-                message: "enter correct number",
-              },
-              required: true,
+              required: 'error message',
             })}
             className="bg-white text-gray-900 text-xl rounded-lg focus:border-blue-600 block w-full p-2.5"
           />
-          {errors.adress?.type && (
-            <p className="text-red-600">Enter correct adress</p>
+          {errors.address?.type && (
+            <p className="text-red-600">Enter adress</p>
           )}
         </div>
         <button

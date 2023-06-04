@@ -12,7 +12,7 @@ import { clearCart } from "@/redux/slices/cartSlice";
 
 const SubTotal = () => {
   const [isOpen, setIsOpen] = useState(false);
-  let [message, setMessage] = useState("");
+  let [message, setMessage] = useState<string[]>([]);
   const router = useRouter();
   const dispatch = useDispatch();
   const { reset } = useForm();
@@ -22,10 +22,9 @@ const SubTotal = () => {
   const { id, email, name, address, phone } = useSelector(
     (state: RootState) => state.user
   );
-  console.log(id, email, name, address, phone)
   const handleCreateOrder = () => {
     if (!email || !address || !phone) {
-      setMessage("Please, fill the form.");
+      setMessage(["Please, fill the form."]);
     } else {
       writeUserData({
         id,
@@ -38,22 +37,22 @@ const SubTotal = () => {
         items: products,
         totalPrice,
       });
-      setMessage(
-        "Thank you for your order. Your order is already being prepared."
-      );
+      setMessage([
+        "Thank you for your order.",
+        "Your order is already being prepared.",
+      ]);
       setTimeout(() => {
         reset();
         dispatch(
-          setUser({ id: 0, name: "", email: "", phone: 0, address: "" })
+          setUser({ id: "", name: "", email: "", phone: 0, address: "" })
         );
         dispatch(clearCart());
         router.push("/");
-      }, 1000);
+      }, 1500);
     }
     setIsOpen(true);
     setTimeout(() => {
       setIsOpen(false);
-      if (message.includes("Thank you")) router.push("/");
     }, 1000);
   };
 

@@ -1,8 +1,6 @@
-"use client"
+"use client";
 
-const Modal = (props: {
-  message: string;
-}) => {
+const Modal = (props: { message: string[] }) => {
   return (
     <div
       id="popup-modal"
@@ -12,7 +10,9 @@ const Modal = (props: {
         <div className="relative rounded-lg bg-slate-400  shadow">
           <div className="p-6 text-center">
             <h3 className="mb-5 text-2xl font-bold text-white dark:text-gray-400">
-              {props.message}
+              {props.message.map((el, id) => (
+                <p key={id}>{el}</p>
+              ))}
             </h3>
           </div>
         </div>
