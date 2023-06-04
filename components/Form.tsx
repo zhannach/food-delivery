@@ -28,7 +28,7 @@ const Form = () => {
     <>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="my-10 basis-1/4 h-1/3 border-slate-400 border-2 border-solid p-8 rounded-md"
+        className="my-10 basis-2/4 border-slate-400 border-2 border-solid p-8 rounded-md"
       >
         <div className="mb-6">
           <div className="mb-6">
