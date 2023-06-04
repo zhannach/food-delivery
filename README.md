@@ -1,8 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Delivery food app.
 
-### Web application where users can order food delivery.
+### Web application, where users can order food delivery.
 
 _____________________________________________________________
 
@@ -14,7 +12,8 @@ _____________________________________________________________
 - ### Tailwind
 - ### Firebase database
 - ### Redux Toolkit
--  ### Google Maps API, Places API.
+- ### Redux Hook Form
+- ### Google Maps API, Places API.
 
 _____________________________________________________________
 
@@ -39,6 +38,12 @@ Accomplished:
 
 
 Time limits: 3 days.
+
+[Screenshot from 2023-06-04 19-29-26.png](https://i.postimg.cc/dtbSM3R3/Screenshot-from-2023-06-04-19-29-26.png)
+
+https://i.postimg.cc/XqF1X044/screencapture-localhost-3000-cart-2023-06-04-19-30-25.png
+
+
 
 For run the development server:
 
