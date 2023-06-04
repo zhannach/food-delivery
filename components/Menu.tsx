@@ -26,6 +26,7 @@ const Menu = () => {
     <section className="flex flex-wrap justify-between gap-4">
       {shop &&
         shop.menu.map((dish, id) => {
+          dish.shopId = shop.id
           return <Item key={id} {...dish} />;
         })}
     </section>
