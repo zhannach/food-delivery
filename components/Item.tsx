@@ -6,7 +6,7 @@ import { addItem } from "@/redux/slices/cartSlice";
 import { RootState } from "@/redux/store";
 import Modal from "./Portal/Modal";
 
-const Item = ({ title, img, description, price, shopId }: Dish) => {
+const Item = ({ title, img, description, price, shopId, id }: Dish) => {
   const [isOpen, setIsOpen] = useState(false);
   const cartItems = useSelector(
     (state: RootState) => state.cartItems.cartItems
@@ -15,7 +15,7 @@ const Item = ({ title, img, description, price, shopId }: Dish) => {
   const handleClick = () => {
     if (cartItems.length > 0) {
       if (cartItems[0].shopId === shopId) {
-        dispatch(addItem({ title, img, description, price, shopId }));
+        dispatch(addItem({ id, title, img, description, price, shopId }));
       } else {
         setIsOpen(true);
         setTimeout(() => {
@@ -23,13 +23,18 @@ const Item = ({ title, img, description, price, shopId }: Dish) => {
         }, 1500);
       }
     } else {
-      dispatch(addItem({ title, img, description, price, shopId }));
+      dispatch(addItem({id, title, img, description, price, shopId }));
     }
   };
   return (
     <>
       {isOpen && (
-        <Modal message={["You cannot add products from different stores in one order.", "Please, complete the current order."]} />
+        <Modal
+          message={[
+            "You cannot add products from different stores in one order.",
+            "Please, complete the current order.",
+          ]}
+        />
       )}
       <div className="flex p-2 flex-col basis-1/2 shrink-2 items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl">
         <img

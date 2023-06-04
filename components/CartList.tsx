@@ -13,7 +13,7 @@ const CartList = () => {
     <h1 className="mb-10 text-center text-2xl font-bold">Cart Items</h1>
     <section className="mx-auto w-full pb-20 justify-center px-6">
     {cartItems.map((cartItem: Dish) => {
-        return <CartItem key={cartItem.title} {...cartItem} />;
+        return <CartItem key={cartItem.id} {...cartItem} />;
       })}
     </section>
     </div>

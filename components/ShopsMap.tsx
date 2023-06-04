@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { useLoadScript } from "@react-google-maps/api";
 import { getUserLocation, Location } from "../helpers/getUserLocation";
 import Map from "./Map";
 
-const defaultCenter = { lat: 50.450001, lng: 30.523333 };
-
 let service: google.maps.places.PlacesService;
 
 export default function ShopsMap() {
+  const defaultCenter = useMemo(() => ({ lat: 44, lng: -80 }), []);
   const [center, setCenter] = useState(defaultCenter);
   const [coords, setCoordGym] = useState<google.maps.places.PlaceResult[]>([]);
 
@@ -48,7 +47,7 @@ export default function ShopsMap() {
         console.log(center, results);
       }
     });
-  }, [window.google, center]);
+  }, [center]);
 
   if (!isLoaded) {
     return <p>loading...</p>;

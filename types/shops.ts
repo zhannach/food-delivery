@@ -17,6 +17,7 @@ export interface Dish {
   price: string;
   count?: number;
   shopId: string;
+  id: string;
 }
 
 export interface User {

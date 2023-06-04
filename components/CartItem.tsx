@@ -5,17 +5,17 @@ import { Dish } from "@/types/shops";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 
-const CartItem = ({ title, img, price, count }: Dish) => {
-  const [localCount, setLocalCount] = useState<number| undefined>(count);
+const CartItem = ({ id, title, img, price, count }: Dish) => {
+  const [localCount, setLocalCount] = useState(count);
   const dispatch = useDispatch();
   const handlePlusItem = () => {
-    dispatch(addItem({ title, img, price, count }));
+    dispatch(addItem({ id, title, img, price, count }));
     if (localCount)
       setLocalCount((prevState) => (prevState ? prevState + 1 : undefined));
   };
 
   const handleMinusItem = () => {
-    dispatch(minusItem({ title, img, price, count }));
+    dispatch(minusItem({ id, title, img, price, count }));
     if (localCount && localCount >= 1)
       setLocalCount((prevState) =>
         prevState && prevState > 1 ? prevState - 1 : 1
@@ -67,7 +67,7 @@ const CartItem = ({ title, img, price, count }: Dish) => {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                onClick={() => dispatch(removeItem({ title }))}
+                onClick={() => dispatch(removeItem({ title, id }))}
                 className="h-5 w-5 absolute top-2 right-2 cursor-pointer duration-150 hover:text-red-500"
               >
                 <path
