@@ -5,7 +5,7 @@ import Map from "./Map";
 
 let service: google.maps.places.PlacesService;
 
-export default function ShopsMap() {
+const ShopsMap = () => {
   const defaultCenter = useMemo(() => ({ lat: 44, lng: -80 }), []);
   const [center, setCenter] = useState(defaultCenter);
   const [coords, setCoordGym] = useState<google.maps.places.PlaceResult[]>([]);
@@ -60,3 +60,5 @@ export default function ShopsMap() {
     </div>
   );
 }
+
+export const MemoizedShopsMap = React.memo(ShopsMap);
