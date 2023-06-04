@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 
 const CartItem = ({ title, img, price, count }: Dish) => {
-  const [localCount, setLocalCount] = useState(count);
+  const [localCount, setLocalCount] = useState<number| undefined>(count);
   const dispatch = useDispatch();
   const handlePlusItem = () => {
     dispatch(addItem({ title, img, price, count }));
@@ -58,7 +58,9 @@ const CartItem = ({ title, img, price, count }: Dish) => {
               </span>
             </div>
             <div className="flex items-center space-x-4">
-              <p className="text-sm">{parseInt(price) * localCount} UAH</p>
+              <p className="text-sm">
+                {parseInt(price) * (localCount ? localCount : 1)} UAH
+              </p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
