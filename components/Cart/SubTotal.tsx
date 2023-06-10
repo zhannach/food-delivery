@@ -5,7 +5,7 @@ import { RootState } from "@/redux/store";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
-import Modal from "./Portal/Modal";
+import Modal from "../Portal/Modal";
 import { useRouter } from "next/navigation";
 import { setUser } from "@/redux/slices/userSlice";
 import { clearCart } from "@/redux/slices/cartSlice";
@@ -58,7 +58,7 @@ const SubTotal = () => {
 
   return (
     <div className="self-start mt-24 w-52 h-full rounded-lg border bg-white p-6 shadow-md">
-      {isOpen && <Modal message={message} />}
+      {isOpen && <Modal isOpen={isOpen} message={message} />}
       <hr className="my-4" />
       <div className="flex justify-between">
         <p className="text-lg font-bold">Total</p>

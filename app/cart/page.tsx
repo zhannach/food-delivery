@@ -1,9 +1,9 @@
 "use client";
-import CartEmpty from "@/components/CartEmpty";
-import CartList from "@/components/CartList";
-import Form from "@/components/Form";
+import CartEmpty from "@/components/Cart/CartEmpty";
+import CartList from "@/components/Cart/CartList";
+import Form from "@/components/Cart/Form";
 import { MemoizedShopsMap } from "@/components/ShopsMap";
-import SubTotal from "@/components/SubTotal";
+import SubTotal from "@/components/Cart/SubTotal";
 import { RootState } from "@/redux/store";
 import { useSelector } from "react-redux";
 

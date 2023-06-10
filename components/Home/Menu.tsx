@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 import { RootState } from "@/redux/store";
 
 const Menu = () => {
-  const id = useSelector((state: RootState) => state.shop.id)
+  const id = useSelector((state: RootState) => state.shop.id);
   const [shop, setShop] = useState<ShopInfo>();
   useEffect(() => {
     const getShop = async () => {
@@ -23,10 +23,10 @@ const Menu = () => {
   }, [id]);
 
   return (
-    <section className="flex flex-wrap justify-between gap-4">
+    <section className="flex flex-wrap justify-center gap-8">
       {shop &&
         shop.menu.map((dish, id) => {
-          dish.shopId = shop.id
+          dish.shopId = shop.id;
           return <Item key={id} {...dish} />;
         })}
     </section>
