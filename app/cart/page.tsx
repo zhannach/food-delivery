@@ -13,7 +13,7 @@ const Cart = () => {
   return (
     <>
       {cartItems.length > 0 ? (
-        <section className="flex p-20 ml-20 justify-between bg-[url('/image/dark-bagr.png')] bg-[length:320px_100%] bg-no-repeat bg-right bg-fixed">
+        <section className="flex p-20 ml-12 justify-between bg-[url('/image/dark-bagr.png')] bg-[length:300px_100%] bg-no-repeat bg-right bg-fixed">
           <section className="flex flex-col justify-between mb-10">
             <Form />
           </section >

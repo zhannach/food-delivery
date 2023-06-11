@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { MarkerF, GoogleMap } from "@react-google-maps/api";
 type Location = {
   lat: number;
@@ -7,7 +7,7 @@ type Location = {
 
 export default function Map(props: {
   center: Location;
-  coords: google.maps.places.PlaceResult[];
+  coords: Location|null;
 }): JSX.Element {
   const { center, coords } = props;
   return (
@@ -23,7 +23,10 @@ export default function Map(props: {
         }}
       >
         <MarkerF position={center} label={"You"} />
-        {coords.map((result: google.maps.places.PlaceResult, i: number) => (
+        <MarkerF
+          position={coords as Location}
+        />
+        {/* {coords.map((result: google.maps.places.PlaceResult, i: number) => (
           <MarkerF
             key={i}
             title={result.name}
@@ -32,7 +35,7 @@ export default function Map(props: {
               lng: result.geometry?.location?.lng() as number,
             }}
           />
-        ))}
+        ))} */}
       </GoogleMap>
     </>
   );

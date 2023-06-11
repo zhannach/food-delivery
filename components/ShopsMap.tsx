@@ -1,14 +1,17 @@
+"use client";
 import React, { useEffect, useMemo, useState } from "react";
 import { useLoadScript } from "@react-google-maps/api";
 import { getUserLocation, Location } from "../helpers/getUserLocation";
 import Map from "./Map";
+import PlacesAutocomplete from "./PlaceAutocomplete";
 
 let service: google.maps.places.PlacesService;
 
 const ShopsMap = () => {
   const defaultCenter = useMemo(() => ({ lat: 44, lng: -80 }), []);
   const [center, setCenter] = useState(defaultCenter);
-  const [coords, setCoordGym] = useState<google.maps.places.PlaceResult[]>([]);
+  const [coords, setCoordPlaces] = useState<google.maps.places.PlaceResult[]>([]);
+  const [selected, setSelected] = useState<Location | null>(null);
 
   useEffect(() => {
     getUserLocation()
@@ -43,8 +46,7 @@ const ShopsMap = () => {
         results !== null &&
         results !== undefined
       ) {
-        setCoordGym(results);
-        console.log(center, results);
+        setCoordPlaces(results);
       }
     });
   }, [center]);
@@ -54,9 +56,9 @@ const ShopsMap = () => {
   }
 
   return (
-    <div className="w-full h-full">
-      <input type="text" name='search' placeholder="Search" className="border-black w-54 bg-slate-200 rounded-md h-10 m-2 p-4 text-xl" />
-      <Map center={center} coords={coords} />
+    <div className="w-full h-full relative">
+      <PlacesAutocomplete setSelected={setSelected} places={coords} />
+      <Map center={center} coords={selected} />
     </div>
   );
 };
