@@ -2,7 +2,6 @@
 import CartEmpty from "@/components/Cart/CartEmpty";
 import CartList from "@/components/Cart/CartList";
 import Form from "@/components/Cart/Form";
-import { MemoizedShopsMap } from "@/components/ShopsMap";
 import SubTotal from "@/components/Cart/SubTotal";
 import { RootState } from "@/redux/store";
 import { useSelector } from "react-redux";
@@ -17,7 +16,6 @@ const Cart = () => {
         <section className="flex p-20 ml-20 justify-between bg-[url('/image/dark-bagr.png')] bg-[length:320px_100%] bg-no-repeat bg-right bg-fixed">
           <section className="flex flex-col justify-between mb-10">
             <Form />
-            {/* <MemoizedShopsMap /> */}
           </section >
           <CartList />
           <SubTotal />

@@ -54,11 +54,11 @@ const ShopsMap = () => {
   }
 
   return (
-    <div className="w-96 h-96">
-      <h3 className='text-2xl m-4'>See shops location</h3>
+    <div className="w-full h-full">
+      <input type="text" name='search' placeholder="Search" className="border-black w-54 bg-slate-200 rounded-md h-10 m-2 p-4 text-xl" />
       <Map center={center} coords={coords} />
     </div>
   );
-}
+};
 
-export const MemoizedShopsMap = React.memo(ShopsMap);
+export default ShopsMap;

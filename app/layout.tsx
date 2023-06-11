@@ -26,6 +26,7 @@ export default function RootLayout({
       </head>
       <body className={roboto.className}>
         <div id="modal" className="w-200" />
+        <div id="map" />
         <Header />
         <ReduxProvider>{children}</ReduxProvider>
       </body>

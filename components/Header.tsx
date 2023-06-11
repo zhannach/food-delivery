@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import MapButton from "./MapButton";
 
 const Header = () => {
   return (
@@ -18,15 +19,8 @@ const Header = () => {
             height={60}
           />
         </Link>
-        <button className="hover:text-slate-600">
-          <Image
-            src="/image/map.png"
-            alt="shopping cart"
-            className="m-auto"  
-            width={64}
-            height={60}
-          />
-        </button>
+        <MapButton />
+   
       </nav>
     </header>
   );
