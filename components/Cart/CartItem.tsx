@@ -24,7 +24,7 @@ const CartItem = ({ id, title, img, price, count }: Dish) => {
 
   return (
     <div className="rounded-lg relative">
-      <div className="justify-between mb-6 rounded-lg bg-white p-6 shadow-md sm:flex sm:justify-start">
+      <div className="justify-between mb-6 h-46 rounded-lg bg-white p-6 shadow-md sm:flex sm:justify-start">
         <img
           src={img}
           alt="product-image"
@@ -39,7 +39,7 @@ const CartItem = ({ id, title, img, price, count }: Dish) => {
             <div className="flex items-center border-gray-100 align-center">
               <span
                 onClick={handleMinusItem}
-                className="cursor-pointer rounded-l bg-gray-100 py-1 px-3.5 duration-100 hover:bg-blue-500 hover:text-blue-50"
+                className="cursor-pointer rounded-l bg-orange-400 text-white py-1 px-3.5 duration-100 hover:bg-blue-500 hover:text-blue-50"
               >
                 -
               </span>
@@ -52,7 +52,7 @@ const CartItem = ({ id, title, img, price, count }: Dish) => {
               />
               <span
                 onClick={handlePlusItem}
-                className="cursor-pointer rounded-r bg-gray-100 py-1 px-3 duration-100 hover:bg-blue-500 hover:text-blue-50"
+                className="cursor-pointer rounded-r bg-orange-400 text-white bg-gray-100 py-1 px-3 duration-100 hover:bg-blue-500 hover:text-blue-50"
               >
                 +
               </span>

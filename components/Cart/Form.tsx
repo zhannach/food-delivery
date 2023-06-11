@@ -120,7 +120,7 @@ const Form = () => {
           )}
         </div>
         <button
-          className="bg-blue-500 text-white font-bold text-xl h-10 self-end w-20 rounded-md hover:bg-slate-500"
+          className="bg-orange-400 text-white font-bold text-xl h-10 self-end w-20 rounded-md hover:bg-slate-500"
           type="submit"
         >
           Save

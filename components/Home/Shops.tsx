@@ -17,7 +17,7 @@ export default async function Shops(): Promise<JSX.Element> {
   return (
     <section className="my-12 w-11/12">
       <div className="flex justify-between">
-        <h3 className="font-bold text-5xl">Our Menu</h3>
+        <h3 className="font-bold text-5xl">Menu</h3>
         <ul className="flex gap-4 font-medium">
           {restaurants.map((shop: ShopType) => {
             return <Shop key={shop.id} {...shop} />;
