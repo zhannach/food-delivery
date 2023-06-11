@@ -15,14 +15,15 @@ async function getRestaurants() {
 export default async function Shops(): Promise<JSX.Element> {
   const restaurants = await getRestaurants();
   return (
-    <aside className="fixed top-0 left-0 z-0 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0">
-      <div className="h-full px-3 py-28 overflow-y-auto bg-gray-50">
-        <ul className="space-y-2 font-medium">
+    <section className="my-12 w-11/12">
+      <div className="flex justify-between">
+        <h3 className="font-bold text-5xl">Menu</h3>
+        <ul className="flex gap-4 font-medium">
           {restaurants.map((shop: ShopType) => {
             return <Shop key={shop.id} {...shop} />;
           })}
         </ul>
       </div>
-    </aside>
+    </section>
   );
 }

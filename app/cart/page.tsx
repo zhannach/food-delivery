@@ -1,9 +1,8 @@
 "use client";
-import CartEmpty from "@/components/CartEmpty";
-import CartList from "@/components/CartList";
-import Form from "@/components/Form";
-import { MemoizedShopsMap } from "@/components/ShopsMap";
-import SubTotal from "@/components/SubTotal";
+import CartEmpty from "@/components/Cart/CartEmpty";
+import CartList from "@/components/Cart/CartList";
+import Form from "@/components/Cart/Form";
+import SubTotal from "@/components/Cart/SubTotal";
 import { RootState } from "@/redux/store";
 import { useSelector } from "react-redux";
 
@@ -12,20 +11,19 @@ const Cart = () => {
     (state: RootState) => state.cartItems.cartItems
   );
   return (
-    <section className="flex p-20 h-full justify-between bg-gray-100">
+    <>
       {cartItems.length > 0 ? (
-        <>
+        <section className="flex p-20 ml-20 justify-between bg-[url('/image/dark-bagr.png')] bg-[length:320px_100%] bg-no-repeat bg-right bg-fixed">
           <section className="flex flex-col justify-between mb-10">
             <Form />
-            <MemoizedShopsMap />
-          </section>
+          </section >
           <CartList />
           <SubTotal />
-        </>
+        </section>
       ) : (
         <CartEmpty />
       )}
-    </section>
+    </>
   );
 };
 

@@ -1,12 +1,26 @@
 import Link from "next/link";
+import Image from "next/image";
+import MapButton from "./MapButton";
 
 const Header = () => {
   return (
-    <header className="fixed w-full bg-slate-400 z-10 h-16">
-      <nav className="p-5 text-white text-2xl font-bold flex gap-5">
-        <Link href="/" className="hover:text-slate-600">Shop</Link>
-        <span>|</span>
-        <Link href="/cart" className="hover:text-slate-600">Shopping cart</Link>
+    <header className="fixed top-0 left-0 w-24 h-screen shadow-[2px_2px_15px_rgba(0,0,0,0.15)]">
+      <nav className="py-5 pl-2 text-white text-2xl font-bold flex flex-col gap-5">
+        <Link href="/" className="hover:text-slate-600">
+          <Image src="/image/menu.svg" className="m-0" alt="menu" width={96} height={96} />
+        </Link>
+        <span></span>
+        <Link href="/cart" className="hover:text-slate-600">
+          <Image
+            src="/image/cart.png"
+            className="m-auto"
+            alt="shopping cart"
+            width={64}
+            height={60}
+          />
+        </Link>
+        <MapButton />
+   
       </nav>
     </header>
   );
