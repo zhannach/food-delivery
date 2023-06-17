@@ -3,7 +3,7 @@ import Shop from "./Shop";
 
 async function getRestaurants() {
   const res = await fetch(
-    "https://647894c5362560649a2e0d8e.mockapi.io/restaurants",
+    `${process.env.NEXT_PUBLIC_API_URL}`,
   );
   if (!res.ok) {
     throw new Error("Failed to fetch data");

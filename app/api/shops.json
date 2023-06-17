@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Pronto-pizza",
+    "avatar": "image/shops/pizza-small.png",
+    "id": "1"
+  },
+  {
+    "name": "TL Family",
+    "avatar": "image/shops/hamburger.png",
+    "id": "2"
+  },
+  {
+    "name": "Ukrainian",
+    "avatar": "image/shops/meatball.png",
+    "id": "3"
+  },
+  {
+    "name": "Breakfast",
+    "avatar": "image/shops/breakfast.png",
+    "id": "4"
+  },
+  {
+    "name": "Salads",
+    "avatar": "image/shops/salad.png",
+    "menu": {},
+    "id": "5"
+  },
+  {
+    "name": "Desserts",
+    "avatar": "image/shops/cake.png",
+    "menu": {},
+    "id": "6"
+  }
+]

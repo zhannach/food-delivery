@@ -8,16 +8,17 @@ import { RootState } from "@/redux/store";
 const Menu = () => {
   const id = useSelector((state: RootState) => state.shop.id);
   const [shop, setShop] = useState<ShopInfo>();
+
   useEffect(() => {
     const getShop = async () => {
       const response = await fetch(
-        `https://647894c5362560649a2e0d8e.mockapi.io/restaurants/${id}/menu`
+        `${process.env.NEXT_PUBLIC_API_URL}/menu/${id}`
       );
       if (!response.ok) {
         throw new Error("Failed to fetch data");
       }
       const shop = await response.json();
-      setShop(shop[0]);
+      setShop(shop);
     };
     getShop();
   }, [id]);

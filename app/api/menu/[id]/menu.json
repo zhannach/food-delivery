@@ -1,0 +1,334 @@
+[
+  {
+    "menu": [
+      {
+        "id": "1",
+        "title": "4 Cheeses",
+        "img": "https://prontopizza.ua/vinnytsia/wp-content/uploads/sites/21/2021/07/4-syry-3-500x500.webp",
+        "description": "Base, cream, mozzarella, royal cheese, parmesan, dor blue cheese",
+        "price": "242 UAH",
+        "weight": "450 g"
+      },
+      {
+        "id": "2",
+        "title": "Capricciosa",
+        "img": "https://prontopizza.ua/vinnytsia/wp-content/uploads/sites/21/2021/07/kaprichoza-1-500x500.webp",
+        "description": "Base, tomato sauce, mozzarella cheese, mushrooms, salami, ham, tomatoes",
+        "price": "217 UAH",
+        "weight": "490 g"
+      },
+      {
+        "id": "3",
+        "title": "BBQ pizza",
+        "img": "https://prontopizza.ua/vinnytsia/wp-content/uploads/sites/21/2021/07/tehaska-500x500.webp",
+        "description": "Base, tomato sauce, mozzarella cheese, ham, chicken, tomatoes, sweet chili",
+        "price": "250 UAH",
+        "weight": "510 g"
+      },
+      {
+        "id": "4",
+        "title": "4 Seasons",
+        "img": "https://prontopizza.ua/vinnytsia/wp-content/uploads/sites/21/2021/07/4-sezony-500x500.webp",
+        "description": "Base, tomato sauce, mozzarella cheese, paperoni, mushrooms, corn, ham",
+        "price": "229 UAH",
+        "weight": "470 g"
+      },
+      {
+        "id": "5",
+        "title": "Hawaiian",
+        "img": "https://prontopizza.ua/vinnytsia/wp-content/uploads/sites/21/2021/07/gavajska-500x500.webp",
+        "description": "Base, cream, mozzarella cheese, chicken fillet, corn, pineapple, olives",
+        "price": "228 UAH",
+        "weight": "560 g"
+      },
+      {
+        "id": "6",
+        "title": "Love",
+        "img": "https://prontopizza.ua/vinnytsia/wp-content/uploads/sites/21/2021/07/amore-500x500.webp",
+        "description": "Base, cream, mozzarella, chicken, corn, cherry, parmesan, arugula",
+        "price": "216 UAH",
+        "weight": "560 g"
+      },
+      {
+        "id": "7",
+        "title": "Pizza with pear",
+        "img": "https://prontopizza.ua/vinnytsia/wp-content/uploads/sites/21/2021/07/z-grusheyu-2-500x500.webp",
+        "description": "Base, cream, mozzarella cheese, pear, dor-blue cheese, nuts",
+        "price": "212 UAH",
+        "weight": "460 g"
+      }
+    ],
+    "id": "1",
+    "restaurantId": "1"
+  },
+  {
+    "menu": [
+      {
+        "id": "1",
+        "title": "Blackberry burger",
+        "img": "https://tl-family.com/wp-content/uploads/2021/12/6.-burher-Blekberry.jpg",
+        "description": "Brioche bun, two beef cutlets, mozzarella cheese, bacon chips, caramelized onions, blueberry sauce, cheddar sauce",
+        "price": "260 UAH",
+        "weight": "480 g"
+      },
+      {
+        "id": "2",
+        "title": "Texas Burger",
+        "img": "https://tl-family.com/wp-content/uploads/2021/12/6.-burher-Tekhas.jpg",
+        "description": "Brioche bun, beef cutlet, pickled cucumber, tomatoes, salad mix, onion Mars, Cheddar cheese, Texas sauce",
+        "price": "209 UAH",
+        "weight": "450 g"
+      },
+      {
+        "id": "3",
+        "title": "French fries",
+        "img": "https://tl-family.com/wp-content/uploads/2021/12/1.-Kartoplia-Fri.jpg",
+        "description": "with ketchup and mustard",
+        "price": "179 UAH",
+        "weight": "400 g"
+      },
+      {
+        "id": "4",
+        "title": "Spring Chebureces",
+        "img": "https://tl-family.com/wp-content/uploads/2021/12/1.-Chebureky.jpg",
+        "description": "with sour sweet sauce",
+        "price": "159 UAH",
+        "weight": "290 g"
+      },
+      {
+        "id": "5",
+        "title": "Сheese&chicken balls",
+        "img": "https://tl-family.com/wp-content/uploads/2021/12/1.-chyken-bols.jpg",
+        "description": "cheese balls fries with chicken fillet inside",
+        "price": "135 UAH",
+        "weight": "350 g"
+      },
+      {
+        "id": "6",
+        "title": "Corn Dogs",
+        "img": "https://tl-family.com/wp-content/uploads/2021/12/1.-korn-doh.jpg",
+        "description": "with ketchup and mustard",
+        "price": "153 UAH",
+        "weight": "390 g"
+      }
+    ],
+    "id": "2",
+    "restaurantId": "2"
+  },
+  {
+    "menu": [
+      {
+        "id": "1",
+        "title": "BORSCH",
+        "img": "https://greentourua.com/wp-content/uploads/2020/08/borsch3.jpg",
+        "description": "One of the main ingredients of this dish is a beetroot. Other components are potato, carrot, cabbage, onion and sometimes meat",
+        "price": "200 UAH",
+        "weight": "230 g"
+      },
+      {
+        "id": "2",
+        "title": "VARENIKI",
+        "img": "https://greentourua.com/wp-content/uploads/2020/08/vareniki-2.jpg",
+        "description": "Base, tomato sauce, mozzarella cheese, mushrooms, salami, ham, tomatoes",
+        "price": "217 UAH",
+        "weight": "310 g"
+      },
+      {
+        "id": "3",
+        "title": "DERYNU",
+        "img": "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/11/Potato-Pancakes.jpg",
+        "description": "Prepared from finely-shredded raw potatoes mixed with eggs and flour.",
+        "price": "250 UAH",
+        "weight": "300 g"
+      },
+      {
+        "id": "4",
+        "title": "CHICKEN KIEV",
+        "img": "https://greentourua.com/wp-content/uploads/2020/08/chicken-kiev.jpg",
+        "description": "You will enjoy this juicy chicken roll stuffed with garlic butter and a mixture of parsley and spices, then breaded and fried.",
+        "price": "229 UAH",
+        "weight": "210 g"
+      }
+    ],
+    "id": "3",
+    "restaurantId": "3"
+  },
+  {
+    "menu": [
+      {
+        "id": "1",
+        "title": "Syrnyki",
+        "img": "https://fayni-recepty.com.ua/wp-content/uploads/2020/01/syrnyky-retsepty.jpg",
+        "description": "Poppy caramel, fermented milk cream, kozinaki, strawberry, blueberry",
+        "price": "215 UAH",
+        "weight": "260 g"
+      },
+      {
+        "id": "2",
+        "title": "Granola",
+        "img": "https://www.sbs.com.au/food/sites/sbs.com.au.food/files/styles/full/public/rx059_oats_3_of_6-edit_0.jpg?itok=XCuut8eL&mtime=1658974728",
+        "description": "Coconut yogurt, strawberry-rhubarb compote, strawberry, blueberry",
+        "price": "150 UAH",
+        "weight": "210 g"
+      },
+      {
+        "id": "3",
+        "title": "Avocado toast",
+        "img": "https://borysov.com.ua/sites/default/files/dw3a6994_0.jpg",
+        "description": "With poached egg and labne cream cheese, sweet pepper, tomato jam",
+        "price": "285 UAH",
+        "weight": "220 g"
+      },
+      {
+        "id": "4",
+        "title": "Scrambled eggs",
+        "img": "https://www.allrecipes.com/thmb/dn23np3M6tkCe_LU9bIVqKSq5EA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/256007-best-scrambled-eggs-ddmfs-3X4-0031-ff526aac78f24031a5f947a546918a39.jpg",
+        "description": "Two eggs, summer salad with nectarine",
+        "price": "175 UAH",
+        "weight": "280 g"
+      },
+      {
+        "id": "5",
+        "title": "English breakfast",
+        "img": "https://www.secretfoodtours.com/blog/wp-content/uploads/2021/03/UKBfast00.jpg",
+        "description": "Includes rashes of bacon, sausages, eggs, black pudding, baked beans, tomatoes and mushrooms, toast",
+        "price": "190 UAH",
+        "weight": "340 g"
+      },
+      {
+        "id": "6",
+        "title": "Pancakes",
+        "img": "https://deliciouslyella.com/wp-content/uploads/2021/02/%C2%A9-Safia-Shakarchi-Deliciously-Ella-Fluffy-American-Blueberry-Pancakes-10-440x440.jpg",
+        "description": "Made from milk, flour, and eggs, served with butter and maple syrup.",
+        "price": "175 UAH",
+        "weight": "200 g"
+      },
+      {
+        "id": "7",
+        "title": "Shakshuka",
+        "img": "https://assets.bonappetit.com/photos/59ef54473b712f2957b88c64/1:1/w_2240,c_limit/one-skillet-shakshuka-with-shawarma-spices.jpg",
+        "description": "Made with tomatoes, zucchini, soft poached eggs, crumbled feta and fresh herbs. Serve with a pita or toasted bread.",
+        "price": "200 UAH",
+        "weight": "310 g"
+      },
+      {
+        "id": "8",
+        "title": "Belgian Waffles",
+        "img": "https://www.completelydelicious.com/wp-content/uploads/2022/06/best-buttermilk-waffles-5.jpg",
+        "description": "Serve with fruit, chocolate chips, or nuts at your choice",
+        "price": "185 UAH",
+        "weight": "210 g"
+      }
+    ],
+    "id": "4",
+    "restaurantId": "4"
+  },
+  {
+    "menu": [
+      {
+        "id": "1",
+        "title": "Salmon Salad",
+        "img": "https://prontopizza.ua/vinnytsia/wp-content/uploads/sites/21/2021/07/z-lososem-500x500.webp",
+        "description": "Mix of salad, cucumber, cherry tomato, salmon, arugula, oil + lemon, sesame",
+        "price": "147 UAH",
+        "weight": "195 g"
+      },
+      {
+        "id": "2",
+        "title": "Greek salad",
+        "img": "https://prontopizza.ua/vinnytsia/wp-content/uploads/sites/21/2021/07/greczkyj-500x500.webp",
+        "description": "Salad mix, tomato, cucumber, bell pepper, feta cheese, blue onions",
+        "price": "120 UAH",
+        "weight": "210 g"
+      },
+      {
+        "id": "3",
+        "title": "Caesar salad",
+        "img": "https://prontopizza.ua/vinnytsia/wp-content/uploads/sites/21/2021/07/czezar-1-500x500.webp",
+        "description": "Salad mix, cherry tomatoes, quail egg, baked chicken, crackers, parmesan cheese",
+        "price": "250 UAH",
+        "weight": "230 g"
+      },
+      {
+        "id": "4",
+        "title": "Fitness Salad",
+        "img": "https://prontopizza.ua/vinnytsia/wp-content/uploads/sites/21/2021/07/fitnes-500x500.webp",
+        "description": "Mix salad, avocado, cucumber, tomato, soy sauce, sesame seeds",
+        "price": "98 UAH",
+        "weight": "190 g"
+      },
+      {
+        "id": "5",
+        "title": "Chuka salad",
+        "img": "https://prontopizza.ua/vinnytsia/wp-content/uploads/sites/21/2021/07/salat-chuka-500x500.webp",
+        "description": "Chuka salad, nut sauce, sesame seeds",
+        "price": "124 UAH",
+        "weight": "170 g"
+      }
+    ],
+    "id": "5",
+    "restaurantId": "5"
+  },
+  {
+    "menu": [
+      {
+        "id": "1",
+        "title": "Waffle cake",
+        "img": "https://www.babaganosh.org/wp-content/uploads/2019/11/condensed-milk-wafer-cake.jpg.webp",
+        "description": "delicious as in a childhood",
+        "price": "98 UAH",
+        "weight": "180 g"
+      },
+      {
+        "id": "2",
+        "title": "KIEV CAKE",
+        "img": "https://everythingmarina.com/wp-content/uploads/2022/08/AZ3A7358-2.jpg",
+        "description": "It is made with layers of crunchy hazelnut meringue (made with a little bit of flour) and rum-infused buttercream.",
+        "price": "120 UAH",
+        "weight": "190 g"
+      },
+      {
+        "id": "3",
+        "title": "Chocolate Macarons",
+        "img": "https://www.foodandwine.com/thmb/G31FopBBodXHc8E5ZONG-47Dqos=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/200912-xl-chocolate-macarons-69edbba25e8b4d198509543cdbcbd8d3.jpg",
+        "description": "These sandwich cookies get plenty of rich chocolate flavor from cocoa powder and an intense ganache filling",
+        "price": "60 UAH",
+        "weight": "80 g"
+      },
+      {
+        "id": "4",
+        "title": "Chocolate Ice Cream",
+        "img": "https://www.seriouseats.com/thmb/D4gxq91iYF3Swfzhbf_IdGRg7sI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/best-dark-chocolate-ice-cream-recipe-hero-446dacb9d3ce443e8e9880dbd095ef4c.jpg",
+        "description": "Pure vanilla extract, cacao, milk, heavy whipping cream, and sugar.",
+        "price": "140 UAH",
+        "weight": "195 g"
+      },
+      {
+        "id": "5",
+        "title": "Red Velvet Cake",
+        "img": "https://i0.wp.com/www.livewellbakeoften.com/wp-content/uploads/2022/11/Red-Velvet-Cake-9.jpg?w=1360&ssl=1",
+        "description": " The combination of natural cocoa powder, vinegar, and buttermilk in the batter creates a unique texture that no other cake has.",
+        "price": "180 UAH",
+        "weight": "180 g"
+      },
+      {
+        "id": "6",
+        "title": "Cheesecake",
+        "img": "https://www.cookingclassy.com/wp-content/uploads/2019/11/cheesecake-8.jpg",
+        "description": "Cream cheese, eggs, sugar, sour cream, vanilla & salt.",
+        "price": "140 UAH",
+        "weight": "120 g"
+      },
+      {
+        "id": "7",
+        "title": "Strawberry Pie",
+        "img": "https://www.lifeloveandsugar.com/wp-content/uploads/2014/03/Strawberry-Cream-Pie3.jpg",
+        "description": "Made with a crust, strawberry Jell-O, fresh strawberries and topped with homemade whipped cream or Cool Whip.",
+        "price": "170 UAH",
+        "weight": "205 g"
+      }
+    ],
+    "id": "6",
+    "restaurantId": "6"
+  }
+]

@@ -45,7 +45,7 @@ const Item = ({ title, img, description, price, shopId, id }: Dish) => {
         />
         <div className="flex flex-col h-full w-full justify-between p-4 leading-normal">
           <div className="basis 2/3 w-full">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 className="mb-2 text-2xl text-black font-bold tracking-tight text-gray-900">
               {title}
             </h5>
             <p className="mb-3 font-normal text-lg h-26 text-gray-700">
