@@ -37,25 +37,25 @@ const Item = ({ title, img, description, price, shopId, id }: Dish) => {
           ]}
         />
       )}
-      <div className="flex flex-col max-h-80 gap-2 basis-1/2 items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl">
+      <div className="flex flex-col pt-4 w-10/12 m-auto h-auto mx-2  items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl md:pt-2 2xl:basis-1/2 xl:basis-2/5 lg:basis-1/2 sm:basis-2/5">
         <img
-          className="object-cover rounded-t-lg h-full w-1/2"
+          className="object-cover rounded-t-lg w-1/2 h-auto 2xl:max-w-1/2"
           src={img}
           alt={title}
         />
-        <div className="flex flex-col h-full w-full justify-between p-4 leading-normal">
-          <div className="basis 2/3 w-full">
-            <h5 className="mb-2 text-2xl text-black font-bold tracking-tight text-gray-900">
+        <div className="flex flex-col h-auto w-full justify-between p-2 leading-normal sm:p-4">
+          <div className="w-full xl:basis-2/3">
+            <h5 className="mb-2 text-xl text-black font-bold tracking-tight text-gray-900 lg:text-2xl">
               {title}
             </h5>
-            <p className="mb-3 font-normal text-lg h-26 text-gray-700">
+            <p className="mb-3 basis-2/3 font-normal text-sm h-26 text-gray-700 lg:text-lg">
               {description}
             </p>
-            <p className="font-bold text-xl">{price}</p>
+            <p className="font-bold text-base lg:text-2xl">{price}</p>
           </div>
           <button
             onClick={handleClick}
-            className="shadow-[2px_2px_15px_rgba(0,0,0,0.15)] text-black font-bold text-xl h-16 self-end w-20 rounded-xl hover:bg-slate-200"
+            className="shadow-[2px_2px_15px_rgba(0,0,0,0.15)] text-black font-bold text-base h-12 self-end w-16 rounded-xl hover:bg-slate-200 xl:w-20 xl:h-16 md:text-xl md:h-12 md:w-14 sm:h-10 sm:w-12"
             type="button"
           >
             {cartItems.find((item) => item.title === title) ? "In Cart" : "Add"}

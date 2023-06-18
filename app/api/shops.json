@@ -1,6 +1,6 @@
 [
   {
-    "name": "Pronto-pizza",
+    "name": "Pronto Pizza",
     "avatar": "image/shops/pizza-small.png",
     "id": "1"
   },
@@ -26,7 +26,7 @@
     "id": "5"
   },
   {
-    "name": "Desserts",
+    "name": "Pan Cakes",
     "avatar": "image/shops/cake.png",
     "menu": {},
     "id": "6"
