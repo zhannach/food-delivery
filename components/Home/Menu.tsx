@@ -25,7 +25,7 @@ const Menu = () => {
   }, [id]);
 
   return (
-    <section className="flex flex-wrap justify-center gap-y-4 w-full lg:justify-center">
+    <section className="flex flex-wrap justify-center gap-y-4 w-full">
       {shop &&
         shop.menu.map((dish, id) => {
           dish.shopId = shop.id;

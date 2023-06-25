@@ -37,14 +37,14 @@ const Item = ({ title, img, description, price, shopId, id }: Dish) => {
           ]}
         />
       )}
-      <div className="flex flex-col pt-4 w-10/12 m-auto h-auto mx-2  items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl md:pt-2 2xl:basis-1/2 xl:basis-2/5 lg:basis-1/2 sm:basis-2/5">
+      <div className="flex flex-col pt-4 w-11/12  mx-2 items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl md:pt-2 lg:basis-3/5 xl:basis-3/5">
         <img
-          className="object-cover rounded-t-lg w-1/2 h-auto 2xl:max-w-1/2"
+          className="object-cover w-2/4 h-auto rounded-t-lg md:h-full 2xl:max-w-1/2 "
           src={img}
           alt={title}
         />
-        <div className="flex flex-col h-auto w-full justify-between p-2 leading-normal sm:p-4">
-          <div className="w-full xl:basis-2/3">
+        <div className="flex flex-col h-auto basis-1/2 p-2 leading-normal sm:p-4 sm:justify-between">
+          <div className="w-full basis-2/3 ">
             <h5 className="mb-2 text-xl text-black font-bold tracking-tight text-gray-900 lg:text-2xl">
               {title}
             </h5>
